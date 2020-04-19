@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register">
+
+    <ImageView
+        android:id="@+id/imageView_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="#DCECFC"
+        />
+
+    <EditText
+        android:id="@+id/name_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="5dp"
+        android:layout_marginStart="45.5dp"
+        android:layout_marginEnd="45.5dp"
+        android:layout_marginBottom="505dp"
+        android:background="@drawable/register_name"
+        android:hint="   Full name"/>
+
+    <EditText
+        android:id="@+id/mobile_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="45.5dp"
+        android:layout_marginEnd="45.5dp"
+        android:layout_marginBottom="420dp"
+        android:background="@drawable/register_name"
+        android:hint="   Mobile number"/>
+
+    <EditText
+        android:id="@+id/email_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="45.5dp"
+        android:layout_marginEnd="45.5dp"
+        android:layout_marginBottom="335dp"
+        android:background="@drawable/register_name"
+        android:hint="   E-mail"/>
+    <EditText
+        android:id="@+id/password_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="45.5dp"
+        android:layout_marginEnd="45.5dp"
+        android:layout_marginBottom="250dp"
+        android:background="@drawable/register_name"
+        android:hint="   Password"/>
+
+    <Button
+        android:id="@+id/sign_up_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="131dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="165dp"
+        android:background="@drawable/sign_up_register"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="187dp"
+        android:layout_marginEnd="187dp"
+        android:layout_marginBottom="80dp" />
+
+</RelativeLayout>

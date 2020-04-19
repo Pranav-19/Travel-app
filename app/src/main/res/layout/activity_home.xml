@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    android:background="#DCECFC"
+    tools:context=".home">
+
+    <com.shrikanthravi.customnavigationdrawer2.widget.SNavigationDrawer
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/navigationDrawer">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:background="#DCECFC"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/slider_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="275dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#DCECFC"
+                    android:layout_marginBottom="418dp" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/viewPager_menu"
+                android:layout_width="match_parent"
+                android:layout_height="417dp"
+
+                android:background="#DCECFC"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="1dp"
+                android:clipToPadding="false"
+                android:foregroundGravity="center"
+                android:overScrollMode="never">
+
+            </androidx.viewpager.widget.ViewPager>
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </com.shrikanthravi.customnavigationdrawer2.widget.SNavigationDrawer>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

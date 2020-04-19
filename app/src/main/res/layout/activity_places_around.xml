@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#161616"
+    android:paddingTop="20dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!--    <fragment-->
+
+    <!--        android:id="@+id/map"-->
+    <!--        android:name="com.google.android.gms.maps.SupportMapFragment"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        tools:context=".MapsActivity"-->
+    <!--        android:layout_marginTop="100dp"-->
+    <!--        />-->
+
+    <fragment android:id="@+id/autocomplete_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+        />
+
+    <Button
+        android:id="@+id/getRestaurants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/autocomplete_fragment"
+
+        android:text="Restaurants" />
+
+    <Button
+        android:id="@+id/getTouristPlaces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/autocomplete_fragment"
+        android:layout_toRightOf="@+id/getRestaurants"
+        android:text="Tourist Places" />
+
+
+    <Button
+        android:id="@+id/getHotels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hotels"
+        android:layout_below="@id/autocomplete_fragment"
+        android:layout_toRightOf="@id/getTouristPlaces"
+
+        />
+    <!--    <androidx.viewpager.widget.ViewPager-->
+    <!--        android:foregroundGravity="center"-->
+    <!--        android:id="@+id/viewPager"-->
+    <!--        android:layout_centerInParent="true"-->
+    <!--        android:overScrollMode="never"-->
+    <!--        android:clipToPadding="false"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_below="@id/getTouristPlaces"-->
+    <!--        />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/getHotels"
+
+        />
+
+
+
+
+
+
+</RelativeLayout>
+

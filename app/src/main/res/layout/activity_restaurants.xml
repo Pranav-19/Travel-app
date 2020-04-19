@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:background="#161616"
+    tools:context=".HotelsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Select a cuisine"
+        android:id="@+id/cusine"
+        android:textColor="#FF9800"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_toRightOf="@id/cusine"
+        android:layout_marginLeft="12dp"
+        android:textSize="20sp"
+        android:textColor="#FF9800"
+        />
+
+    <Button
+        android:layout_below="@id/cusine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/getIndian"
+        android:text="Indian"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:layout_below="@id/cusine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/getIndian"
+        android:layout_marginTop="10dp"
+        android:text="Continental"
+        android:id="@+id/getContinental"/>
+    <Button
+        android:layout_below="@id/cusine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/getChinese"
+        android:layout_marginTop="10dp"
+        android:text="Chinese"
+        android:layout_toRightOf="@+id/getContinental"
+        />
+
+    <Button
+        android:layout_below="@id/cusine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/getAmerican"
+        android:layout_marginTop="10dp"
+        android:text="American"
+        android:layout_toRightOf="@+id/getChinese"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/getChinese"
+
+        />
+
+</RelativeLayout>

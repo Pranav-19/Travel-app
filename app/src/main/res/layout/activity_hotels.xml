@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingTop="20dp"
+    android:layout_height="match_parent"
+    tools:context=".HotelsActivity"
+    android:background="#161616">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Select hotel type"
+        android:id="@+id/hotel"
+        android:textColor="#FF9800"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_toRightOf="@id/hotel"
+        android:layout_marginLeft="12dp"
+        android:textSize="20sp"
+        android:textColor="#FF9800"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/get3star"
+        android:text="3 star hotels"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/hotel"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/get3star"
+        android:layout_marginTop="10dp"
+        android:text="4 star hotels"
+        android:layout_below="@id/hotel"
+        android:id="@+id/get4star"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/get5star"
+        android:layout_below="@id/hotel"
+        android:layout_marginTop="10dp"
+        android:text="5 star hotels"
+        android:layout_toRightOf="@+id/get4star"
+        />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/get4star"
+
+        />
+
+
+</RelativeLayout>
